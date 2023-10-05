@@ -10,7 +10,6 @@ interface MainNavProps {
 }
 
 const MainNav = ({ data }: MainNavProps) => {
-  console.log(data, "<<<<");
   const pathname = usePathname();
 
   const routes = data.map((route) => ({

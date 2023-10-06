@@ -17,6 +17,8 @@ const ProductCard = ({ data }: ProductCardProps) => {
     router.push(`/product/${data?.id}`);
   };
 
+  console.log(data?.images?.[0]?.url, "<<");
+
   return (
     <div
       className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
